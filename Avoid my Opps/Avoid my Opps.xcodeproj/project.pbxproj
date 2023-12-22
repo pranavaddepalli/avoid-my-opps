@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		81C1F6312B340DAB007AB580 /* Avoid_my_OppsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C1F6302B340DAB007AB580 /* Avoid_my_OppsApp.swift */; };
 		81C1F6332B340DAB007AB580 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C1F6322B340DAB007AB580 /* ContentView.swift */; };
-		81C1F6352B340DAB007AB580 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C1F6342B340DAB007AB580 /* Item.swift */; };
 		81C1F6372B340DAC007AB580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C1F6362B340DAC007AB580 /* Assets.xcassets */; };
 		81C1F63A2B340DAC007AB580 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C1F6392B340DAC007AB580 /* Preview Assets.xcassets */; };
 		81C1F6442B340DAC007AB580 /* Avoid_my_OppsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C1F6432B340DAC007AB580 /* Avoid_my_OppsTests.swift */; };
 		81C1F64E2B340DAC007AB580 /* Avoid_my_OppsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C1F64D2B340DAC007AB580 /* Avoid_my_OppsUITests.swift */; };
 		81C1F6502B340DAC007AB580 /* Avoid_my_OppsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C1F64F2B340DAC007AB580 /* Avoid_my_OppsUITestsLaunchTests.swift */; };
+		81C1F65D2B3613FA007AB580 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C1F65C2B3613FA007AB580 /* LocationDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		81C1F62D2B340DAB007AB580 /* Avoid my Opps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Avoid my Opps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C1F6302B340DAB007AB580 /* Avoid_my_OppsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avoid_my_OppsApp.swift; sourceTree = "<group>"; };
 		81C1F6322B340DAB007AB580 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		81C1F6342B340DAB007AB580 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		81C1F6362B340DAC007AB580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81C1F6392B340DAC007AB580 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81C1F63F2B340DAC007AB580 /* Avoid my OppsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Avoid my OppsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +45,7 @@
 		81C1F6492B340DAC007AB580 /* Avoid my OppsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Avoid my OppsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C1F64D2B340DAC007AB580 /* Avoid_my_OppsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avoid_my_OppsUITests.swift; sourceTree = "<group>"; };
 		81C1F64F2B340DAC007AB580 /* Avoid_my_OppsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avoid_my_OppsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		81C1F65C2B3613FA007AB580 /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +98,9 @@
 			children = (
 				81C1F6302B340DAB007AB580 /* Avoid_my_OppsApp.swift */,
 				81C1F6322B340DAB007AB580 /* ContentView.swift */,
-				81C1F6342B340DAB007AB580 /* Item.swift */,
 				81C1F6362B340DAC007AB580 /* Assets.xcassets */,
 				81C1F6382B340DAC007AB580 /* Preview Content */,
+				81C1F65C2B3613FA007AB580 /* LocationDataManager.swift */,
 			);
 			path = "Avoid my Opps";
 			sourceTree = "<group>";
@@ -260,8 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C1F65D2B3613FA007AB580 /* LocationDataManager.swift in Sources */,
 				81C1F6332B340DAB007AB580 /* ContentView.swift in Sources */,
-				81C1F6352B340DAB007AB580 /* Item.swift in Sources */,
 				81C1F6312B340DAB007AB580 /* Avoid_my_OppsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +429,7 @@
 				DEVELOPMENT_TEAM = CS583GSWPW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to let y";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,6 +459,7 @@
 				DEVELOPMENT_TEAM = CS583GSWPW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to let y";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
